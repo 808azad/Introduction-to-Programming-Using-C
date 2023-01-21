@@ -11,7 +11,7 @@ Email: azeynalov1@myseneca.ca
 
 void title() {
 	printf("IPC144 NBB\t");
-	printf("Workshop1\t");
+	printf("Workshop 1\t");
 	printf("Part 1\n");		
 }
 
