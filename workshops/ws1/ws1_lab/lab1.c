@@ -1,3 +1,12 @@
+
+/*
+Name: Azad Zeynalov
+Student Number: 112217229
+Email: azeynalov1@myseneca.ca
+*/
+
+
+
 #include <stdio.h>
 
 void title() {
