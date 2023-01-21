@@ -22,7 +22,7 @@ void line() {
 void info() {
 	printf("Name:\n");
 	printf("\tAzad Zeynalov\n");
-	printf("tEmail:\n");
+	printf("Email:\n");
 	printf("\tazeynalov1@myseneca.ca\n");
 
 
