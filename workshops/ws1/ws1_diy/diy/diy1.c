@@ -48,16 +48,23 @@ void info() {
 void average() {
 	  
 	int ipc144, uli101, eac150;
+	ipc144 = 77;
+	uli101 = 55;
+	eac150 = 82;
+
+
+
+
 
 	printf("Enter the marks for the following subjects,\n");
-	printf("IPC144: ");
-	scanf("%d", &ipc144);
+	printf("IPC144: %d\n", ipc144);
+	//scanf("%d", &ipc144);
 
-	printf("ULI101: ");
-	scanf("%d", &uli101);
+	printf("ULI101: %d\n", uli101);
+	//scanf("%d", &uli101);
 
-	printf("EAC150: ");
-	scanf("%d", &eac150);
+	printf("EAC150: %d\n", eac150);
+	//scanf("%d", &eac150);
 
 
 
