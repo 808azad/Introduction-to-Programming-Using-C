@@ -1,6 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-#include <stdio.h>
 
 /*
 Name: Azad Zeynalov
@@ -16,12 +15,21 @@ Email: azeynalov1@myseneca.ca
 
 
 
+#include <stdio.h>
+
+
+
+
+
+
+
+
 
 void title() {
 	
 	printf("IPC144 NBB\t");
 	printf("Workshop1\t");
-	printf("Part 1\n");
+	printf("Part 2\n");
 
 }
 
@@ -54,16 +62,18 @@ void average() {
 
 
 	int average = (ipc144 + uli101 + eac150) / 3;
-	printf("The average is: %d", average);
+	printf("The average is: %d\n", average);
 
 }
 
-void main() {
+int main(void) {
 
 	title();
 	line();
 	info();
+	line();
 	average();
+	line();
 
 	return 0;
 
@@ -95,12 +105,3 @@ void main() {
 
 
 
-int main(){
-
-
-
-
-
-
-
-}
