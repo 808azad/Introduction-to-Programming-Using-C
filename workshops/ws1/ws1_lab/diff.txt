@@ -1,0 +1,14 @@
+In line number 6 of your output:
+The output should be:
+Email:
+^
+But your output is: 
+tEmail:
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [E] ASCII code(69)
+but you printed
+  [t] ASCII code(116)
+
