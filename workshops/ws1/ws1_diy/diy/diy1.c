@@ -25,7 +25,7 @@ Email: azeynalov1@myseneca.ca
 
 
 
-void title() {
+void title(void) {
 	
 	printf("IPC144 NBB\t");
 	printf("Workshop1\t");
@@ -33,11 +33,11 @@ void title() {
 
 }
 
-void line() {
+void line(void) {
 	printf("------------------------------------------------------------\n");
 }
 
-void info() {
+void info(void) {
 	
 	printf("Name:\n");
 	printf("\tAzad Zeynalov\n");
@@ -45,15 +45,9 @@ void info() {
 	printf("\tazeynalov1@myseneca.ca\n");
 }
 
-void average() {
+void average(void) {
 	  
 	int ipc144, uli101, eac150;
-	ipc144 = 77;
-	uli101 = 55;
-	eac150 = 82;
-
-
-
 
 
 	printf("Enter the marks for the following subjects,\n");
@@ -81,6 +75,7 @@ int main(void) {
 	line();
 	average();
 	line();
+	return 0;
 
 	
 
