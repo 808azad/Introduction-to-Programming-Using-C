@@ -57,14 +57,14 @@ void average() {
 
 
 	printf("Enter the marks for the following subjects,\n");
-	printf("IPC144: %d\n", ipc144);
-	//scanf("%d", &ipc144);
+	printf("IPC144: ");
+	scanf("%d", &ipc144);
 
-	printf("ULI101: %d\n", uli101);
-	//scanf("%d", &uli101);
+	printf("ULI101: ");
+	scanf("%d", &uli101);
 
-	printf("EAC150: %d\n", eac150);
-	//scanf("%d", &eac150);
+	printf("EAC150: ");
+	scanf("%d", &eac150);
 
 
 
@@ -82,7 +82,7 @@ int main(void) {
 	average();
 	line();
 
-	return 0;
+	
 
 
 
