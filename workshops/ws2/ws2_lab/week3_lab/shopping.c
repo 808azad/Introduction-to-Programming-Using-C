@@ -40,7 +40,7 @@ void line(char fill, int length) {
 	line('-', 50);
 	printf("Total price for all the items purchased: %.2lf\n", sum);
 
-	average = sum / 3;
+	average = sum / noOfItems;
 	printf("Average price of the items: %.2lf\n", average);
 	line('=', 50);
 
