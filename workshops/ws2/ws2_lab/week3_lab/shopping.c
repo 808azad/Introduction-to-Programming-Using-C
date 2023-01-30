@@ -1,6 +1,33 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+/*
+
+Name: Azad Zeynalov
+E-mail: azeynalov1@myseneca.ca
+Student Number: 112217229
+Completion Date: 29-01-23
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 void line(char fill, int length) {
 	int i = 0;
 	while (i < length){
@@ -32,8 +59,7 @@ void line(char fill, int length) {
 		
 		
 		row++;
-		
-		
+				
 	}
 	
 	
@@ -43,17 +69,4 @@ void line(char fill, int length) {
 	average = sum / noOfItems;
 	printf("Average price of the items: %.2lf\n", average);
 	line('=', 50);
-
-
-
-	
-	
-
-
-	
- 
-
-
-
-
 }
