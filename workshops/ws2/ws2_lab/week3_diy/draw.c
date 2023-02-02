@@ -1,6 +1,21 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+/*
+Name: Azad Zeynalov
+Student Number: 112217229
+E-mail: azeynalov1@myseneca.ca
+Date of completion: 01.02.23
+
+
+
+*/
+
+
+
+
+
+
 
 
 void rectangle(char leftTop, char top, char topRight,
