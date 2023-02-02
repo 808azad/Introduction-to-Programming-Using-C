@@ -30,15 +30,15 @@ void rectangle(char leftTop, char top, char topRight,
     f = 0;
 
     printf("%c", leftTop);
-    while (i < width - 1) {
+    while (i < width - 2) {
         printf("%c", top);
         i++;
     }
     printf("%c\n", topRight);
 
-    while (k < height - 1) {
+    while (k < height - 2) {
         printf("%c", left);
-        for (j = 0; j < width - 1; j++) {
+        for (j = 0; j < width - 2; j++) {
             printf("%c", fill);
       }
         printf("%c", right);
@@ -48,7 +48,7 @@ void rectangle(char leftTop, char top, char topRight,
     }
      
     printf("%c", buttomLeft);
-     while (f < width - 1) {
+     while (f < width - 2) {
          printf("%c", buttom);
          f++;
      }printf("%c\n", rightButtom);
