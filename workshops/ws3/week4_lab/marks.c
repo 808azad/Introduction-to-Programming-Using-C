@@ -44,7 +44,7 @@ int getNoOfStudents(void) {
 
 }
 int getAverage(int NumberOfStudents) {
-	int count = 1, mark, studno = 0, sum = 0;
+	int count = 1, mark, sum = 0;
 	printf("Enter %d student marks...\n", NumberOfStudents);
 
 	while (count <= NumberOfStudents) {
