@@ -65,7 +65,7 @@ int getAverage(int NumberOfStudents) {
 
 void printReport(int NumberOfStudents, int average) {
 	printf("Number of students: %d\n", NumberOfStudents);
-	printf("Class average: %d% (", average);
+	printf("Class average: %d (", average);
 	
 	prnGrade(average);
 	printf(")");
