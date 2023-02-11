@@ -86,7 +86,7 @@ void rental(void) {
 	printf("\n");
 
 	char ch = ' ';
-	printf("Total price:%7c %.2lf\n", ch, price);
+	printf("Total price:%6c %.2lf\n", ch, price);
 	printf("Tax:%15c %.2lf\n", ch, price * 0.13);
 	printf("Total + Tax:%7c %.2lf\n", ch,  price * 1.13);
 	line('*', 28);
