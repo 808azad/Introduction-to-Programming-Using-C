@@ -44,7 +44,7 @@ int getNoOfStudents(void) {
 
 }
 int getAverage(int NumberOfStudents) {
-	int count = 1, mark, studno = 0, sum = 0;
+	int count = 1, mark, sum = 0;
 	printf("Enter %d student marks...\n", NumberOfStudents);
 
 	while (count <= NumberOfStudents) {
@@ -65,7 +65,7 @@ int getAverage(int NumberOfStudents) {
 
 void printReport(int NumberOfStudents, int average) {
 	printf("Number of students: %d\n", NumberOfStudents);
-	printf("Class average: %d (", average);
+	printf("Class average: %d%% (", average);
 	
 	prnGrade(average);
 	printf(")");

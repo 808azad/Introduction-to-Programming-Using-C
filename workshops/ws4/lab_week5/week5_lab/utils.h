@@ -1,0 +1,2 @@
+int getInt();
+void flushKey();
