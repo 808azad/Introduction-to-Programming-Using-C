@@ -54,7 +54,7 @@ int getAverage(int NumberOfStudents) {
 			printf("Invalid Mark, values should be greater than or equal 0.\n");
 		}
 		else if (mark > 100) {
-			printf("Invalid Mark, values should be greater than or equal 0.\n");
+			printf("Invalid Mark, values should be less than or equal to 100.\n");
 		}
 		else {
 			count = count + 1;
