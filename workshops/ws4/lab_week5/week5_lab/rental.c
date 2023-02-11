@@ -28,7 +28,7 @@ void menu(void) {
 
 double rent(int sku) {
 
-	double price = 0.0;
+	double price = 0;
 
 	switch (sku) {
 	case 101:
@@ -66,7 +66,7 @@ double rent(int sku) {
 
 void rental(void) {
 	int skuNum = 0;
-	double price = 0.0;
+	double price = 0;
 	menu();
 
 	do {
