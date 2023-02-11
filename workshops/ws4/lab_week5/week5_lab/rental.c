@@ -71,7 +71,7 @@ void rental(void) {
 	menu();
 
 	do {
-		printf("Enter sku number or 0 to exit: ");
+		printf("Enter Sku number or 0 to exit: ");
 			skuNum = getInt();
 		
 		if (skuNum != 0) {
