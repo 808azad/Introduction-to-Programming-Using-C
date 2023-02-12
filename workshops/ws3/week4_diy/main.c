@@ -10,25 +10,25 @@ void line(char fill, int length);
 int main(void) {
     int value;
     double dvalue;
-    printf("Enter an integer value: ");
+    printf("\nEnter an integer value: ");
     value = getInt();
     printf("You entered: %d\n", value);
     line('*', 50);
    
     //********************************************
-    printf("Enter an integer value between 10 and 20 inclusive: ");
+    printf("\nEnter an integer value between 10 and 20 inclusive: ");
     value = getIntMM(10, 20);
     printf("You entered: %d\n", value);
     line('*', 50);
    
     //********************************************
-     printf("Enter a double value: ");
+     printf("\nEnter a double value: ");
     dvalue = getDouble();
     printf("You entered: %.2lf\n", dvalue);
     line('*', 50);
     
     //********************************************
-    printf("Enter a double value between 10.1 and 20.9 inclusive: ");
+    printf("\nEnter a double value between 10.1 and 20.9 inclusive: ");
     dvalue = getDoubleMM(10.1, 20.9);
     printf("You entered: %.2lf\n", dvalue);
     line('*', 50);
