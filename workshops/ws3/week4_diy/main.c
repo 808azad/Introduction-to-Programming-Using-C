@@ -20,13 +20,13 @@ int main(void) {
    value = getIntMM(10, 20);
    printf("You entered: %d\n", value);
    line('*', 50);
-   printf("\n")
+   printf("\n");
    //********************************************
    printf("Enter a double value: ");
    dvalue = getDouble();
    printf("You entered: %.2lf\n", dvalue);
    line('*', 50);
-   printf("\n)
+   printf("\n);
    //********************************************
    printf("Enter a double value between 10.1 and 20.9 inclusive: ");
    dvalue = getDoubleMM(10.1, 20.9);
