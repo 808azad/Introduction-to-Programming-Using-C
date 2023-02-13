@@ -13,6 +13,7 @@ void line(char fill, int length) {
     for (i = 0; i < length; i++) {
         printf("%c", fill);
     }
+    putchar('\n');
 }
 
 
@@ -21,13 +22,13 @@ int getInt(void) {
     int matches = scanf("%d", &value);
     char c = getchar();
     while (matches != 1 || c != '\n') {
-        //flushKey();
+        flushKey();
         if (matches != 1) {
             printf("Invalid Integer, try again: ");
         }
         else {
             printf("Enter only an integer, try again: ");
-            flushKey();
+        //    flushKey();
         }
         matches = scanf("%d", &value);
         c = getchar();
@@ -59,13 +60,12 @@ double getDouble(void) {
     double dmatches = scanf("%lf", &dvalue);
     char c = getchar();
     while (dmatches != 1 || c != '\n') {
-       // flushKey();
+        flushKey();
         if (dmatches != 1) {
             printf("Invalid Double, try again: ");
         }
         else {
             printf("Enter only a Double, try again: ");
-            flushKey();
         }
         dmatches = scanf("%lf", &dvalue);
         c = getchar();
