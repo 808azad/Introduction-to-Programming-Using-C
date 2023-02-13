@@ -31,7 +31,7 @@ void rectangle(char leftTop, char top, char topRight,
 
     printf("%c", leftTop);
     while (i < width - 2) {
-        printf("%c", top);
+        printf("%c", top); 
         i++;
     }
     printf("%c\n", topRight);

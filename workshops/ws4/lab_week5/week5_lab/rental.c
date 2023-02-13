@@ -32,35 +32,34 @@ double rent(int sku) {
 
 	switch (sku) {
 	case 101:
-		printf("Skis ............. 12.30$\n");
+		printf("Skis .... 12.30$\n");
 		price = 12.30;
 		break;
 	case 102:
-		printf("Boots ............ 10.45$\n");
+		printf("Boots .... 10.45$\n");
 		price = 10.45;
 		break;
 	case 203:
-		printf("Poles ............ 2.99$\n");
+		printf("Poles .... 2.99$\n");
 		price = 2.99;
 		break;
 	case 204:
-		printf("Helmet ...........  3.99$\n");
+		printf("Helmet .... 3.99$\n");
 		price = 3.99;
 		break;
 	case 305:
-		printf("Winter Pants ..... 14.30$\n");
+		printf("Winter Pants .... 14.30$\n");
 		price = 14.30;
 		break;
 	case 306:
-		printf("Winter Jacket ............ 20.55$\n");
+		printf("Winter Jacket .... 20.55$\n");
 		price = 20.5;
 		break;
 	default:
-		printf("Invalid Selection!\n");
+		printf("Invalid Selection!");
 		
 	
 	}
-	
 	return price;
 
 }
@@ -71,7 +70,7 @@ void rental(void) {
 	menu();
 
 	do {
-		printf("Enter Sku or 0 to exit: ");
+		printf("Enter sku number or 0 to exit: ");
 			skuNum = getInt();
 		
 		if (skuNum != 0) {
@@ -86,15 +85,11 @@ void rental(void) {
 	printf("\n");
 
 	char ch = ' ';
-	printf("Total price:%6c %.2lf\n", ch, price);
+	printf("Total price:%7c %.2lf\n", ch, price);
 	printf("Tax:%15c %.2lf\n", ch, price * 0.13);
-	printf("Total + Tax:%6c %.2lf$\n", ch,  price * 1.13);
+	printf("Total + Tax:%7c %.2lf\n", ch,  price * 1.13);
 	line('*', 28);
-	printf("\n");
-
-
-
-	
+	printf("\n");	
 }
 
 
