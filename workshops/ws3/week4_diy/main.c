@@ -10,10 +10,13 @@ void line(char fill, int len);
 int main(void) {
    int value;
    double dvalue;
+   printf("\n");
+   printf("\n);
    printf("Enter an integer value: ");
    value = getInt();
    printf("You entered: %d\n", value);
    line('*', 50);
+   printf("\n");
    printf("\n");
  
    
