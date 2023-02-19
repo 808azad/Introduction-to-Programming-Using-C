@@ -32,7 +32,7 @@ int main() {
 
 
 	for (i = 0; i < numberOfStudents; i++) {
-		printf("%d: \n", i + 1);
+		printf("%d:\n", i + 1);
 		printf("Student Number: ");
 		scanf("%d", &studentsNum[i]);
 		printf("Mark: ");
