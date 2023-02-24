@@ -22,7 +22,7 @@ int main() {
 	char subjCode[10];
 
 
-	printf("Enter subject name: ");
+	printf("Enter subject Name: ");
 	scanf("%s", subjCode);
 
 	printf("Enter the number of students (max 50): ");

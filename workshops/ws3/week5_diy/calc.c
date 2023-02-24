@@ -14,27 +14,31 @@ void line(char fill, int length) {
 
 
 int calc() {
-	double num1, num2, result;
+	double num1, num2, result = 0.0;
 	char operators;
 	int local = 1;
 	int length = 5;
-	char c = getchar();
+	char sign;
+
 
 	printf("> ");
-	double matches = scanf("%lf %c %lf", &num1, &operators, &num2);
+	double matches = scanf("%c %lf %c %lf", &sign, &num1, &operators, &num2);
 
 
 
+	
+	
+	
+	
+	
 
+	
 
-	while (matches = 1 || c = '\n') {
+	
 
+	
 
-		if (matches != 1) {
-			printf("Invalid Command!\n");
-			printf("[Question mark][First Number][Operation][Second Number] < ENTER>");
-		}else{
-			switch (operators) {
+          switch (operators) {
 			case '+':
 				printf("%.3lf\n", result = num1 + num2);
 				if (result = length) {
@@ -66,17 +70,18 @@ int calc() {
 					line('-', result);
 				}
 				break;
-			case '^':
+			case '^':				
+				exp(num1, num2);
+				printf("%.3lf ^ %.3lf = %.3lf", num1, num2, result);
 
-				printf("%lf\n", result = (int)num1 ^ (int)num2);
+
 				break;
 			default:
 				printf("'%c' is not a valid operation, (only +,-,/,x,%% and ^ are acceptable)\n", operators);
 			}
 
-		}
-
-	}
-    return result;
+		
 
 }
+  
+
