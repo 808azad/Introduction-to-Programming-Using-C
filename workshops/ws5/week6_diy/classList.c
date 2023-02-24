@@ -54,11 +54,6 @@ void printReport(const char subjectCode[], const int row[], const int studentNum
 }
 
 void subjectMarksReport(void) {
-    /* int age;
-    printf("Enter your age: ");
-    age = getMMInt(18, 99, "AGE");
-    printf("You are %d years old!\n", age);*/
-        
 
     int i;
     int numberOfStudents;
@@ -98,39 +93,3 @@ void subjectMarksReport(void) {
    
 }
 
-/*void infos(void) {
-   
-    int i;
-    int numberOfStudents;
-
-    int marks[50];
-    int studentsNum[50];
-    int row[5];
-
-    char subjCode[10];
-
-
-    printf("Enter subject Name: ");
-    scanf("%s", subjCode);
-
-    printf("Enter the number of students (max 50): ");
-    scanf("%d", &numberOfStudents);
-
-    printf("Enter %d student numbers and student marks...\n", numberOfStudents);
-
-
-    for (i = 0; i < numberOfStudents; i++) {
-        printf("%d of 5:\n", i + 1);
-        printf("Student Number: ");
-        studentsNum[50] = getMMInt(999, 1000000, "Student Number");
-        scanf("%d", &studentsNum[i]);
-        printf("Mark: ");
-        marks[50] = getMMInt(0, 100, "Mark");
-        scanf("%d", &marks[i]);
-
-    }
-    printf("\n");
-    printReport(subjCode, studentsNum, marks, numberOfStudents);
-
-
-}*/
