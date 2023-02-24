@@ -68,7 +68,7 @@ void subjectMarksReport(void) {
     printf("Enter subject Name: ");
     scanf("%s", subjCode);
 
-    printf("Enter the number of students (max 50): ");
+    printf("Enter Number of students (max 50): ");
     numberOfStudents = getMMInt(1, 50, "Number of students");
 
 
