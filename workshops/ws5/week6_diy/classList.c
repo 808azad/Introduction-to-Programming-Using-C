@@ -72,7 +72,7 @@ void subjectMarksReport(void) {
     numberOfStudents = getMMInt(1, 50, "Number of students");
 
 
-    printf("Please enter %d student marks...\n", numberOfStudents);
+    printf("Please enter %d student marks: \n", numberOfStudents);
     
 
 
