@@ -27,7 +27,7 @@ void printReport(const char subjectCode[], const int row[], const int studentNum
 
     for (i = 0; i < noOfStudents; i++) {
 
-        printf("| %d | %06d |  %d |\n", row[i], studentNumbers[i], marks[i]);
+        printf("| %d | %06d |%5d |\n", row[i], studentNumbers[i], marks[i]);
       
 
         totalMarks += marks[i];
@@ -72,7 +72,7 @@ void subjectMarksReport(void) {
     numberOfStudents = getMMInt(1, 50, "Number of students");
 
 
-    printf("Please enter %d student numbers and marks...\n", numberOfStudents);
+    printf("Please enter %d student marks...\n", numberOfStudents);
     
 
 
