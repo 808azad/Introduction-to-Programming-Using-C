@@ -18,16 +18,16 @@ void printReport(const char subjectCode[], const int row[], const int studentNum
 
     char c = ' ';
     printf("%cSUBJECT MARKS REPORT!\n", c);
-    printf("+-------------------+\n");
-    printf("|%10s%9c|\n", subjectCode, c);
-    printf("+---+--------+------+\n");
-    printf("|Row| Std No | mark |\n");
-    printf("+---+--------+------+\n");
+    printf("%c+-------------------+\n",c);
+    printf("%c|%10s%9c|\n", c, subjectCode, c);
+    printf("%c+---+--------+------+\n",c);
+    printf("%c|Row| Std No | mark |\n", c);
+    printf("%c+---+--------+------+\n", c);
 
 
     for (i = 0; i < noOfStudents; i++) {
 
-        printf("| %d | %06d |%5d |\n", row[i], studentNumbers[i], marks[i]);
+        printf("%c| %d | %06d |%5d |\n", c, row[i], studentNumbers[i], marks[i]);
       
 
         totalMarks += marks[i];
@@ -46,10 +46,10 @@ void printReport(const char subjectCode[], const int row[], const int studentNum
 
 
     printf("+---+--------+------+\n");
-    printf("|%cAverage %3c|%5d |\n", c, c, average);
-    printf("|%cHighest %3c|%5d |\n", c, c, highestMark);
-    printf("|%cLowest  %3c|%5d |\n", c, c, lowestMark);
-    printf("+---+--------+------+\n");
+    printf("%c|%cAverage %3c|%5d |\n", c, c, c, average);
+    printf("%c|%cHighest %3c|%5d |\n", c, c, c, highestMark);
+    printf("%c|%cLowest  %3c|%5d |\n", c, c, c, lowestMark);
+    printf("%c+---+--------+------+\n", c);
 
 }
 
