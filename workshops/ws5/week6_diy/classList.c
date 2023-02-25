@@ -17,7 +17,7 @@ void printReport(const char subjectCode[], const int row[], const int studentNum
 
 
     char c = ' ';
-    printf("SUBJECT MARKS REPORT!\n");
+    printf("%cSUBJECT MARKS REPORT!\n", c);
     printf("+-------------------+\n");
     printf("|%10s%9c|\n", subjectCode, c);
     printf("+---+--------+------+\n");
