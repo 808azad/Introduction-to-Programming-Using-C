@@ -49,7 +49,7 @@ void printReport(const char subjectCode[], const int row[], const int studentNum
     printf("%c|%cAverage %3c|%5d |\n", c, c, c, average);
     printf("%c|%cHighest %3c|%5d |\n", c, c, c, highestMark);
     printf("%c|%cLowest  %3c|%5d |\n", c, c, c, lowestMark);
-    printf("%c+---+--------+------+\n", c);
+    printf("%c+------------+------+\n", c);
 
 }
 
