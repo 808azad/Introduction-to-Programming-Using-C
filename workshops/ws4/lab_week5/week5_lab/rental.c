@@ -95,16 +95,3 @@ void rental(void) {
 
 
 
-int yes(void) {
-	int res;
-	char resp;
-	printf("(Y)es or (N)o: ");
-	resp = getchar();
-	if (resp == 'Y' || resp == 'y') {
-		res = 1;
-	}
-	else {
-		res = 0;
-	}
-	return res;
-}
