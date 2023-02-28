@@ -6,16 +6,6 @@
 NAME: Azad Zeynalov
 STUDENT NUMBER: 112217229
 E-MAIL: azeynalov1@myseneca.ca
-
-
-
-
-
-
-
-
-
-
 */
 
 
