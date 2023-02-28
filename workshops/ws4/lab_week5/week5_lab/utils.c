@@ -40,14 +40,8 @@ void flushKey() {
 }
 
 
-void exp(double number, double ex) {
-    double sum = 1.0;
-    int i = 0;
-
-    for (i = 0; i <= ex; i++) {
-        sum *= number;
-    }
 
 
 
-}
+
+
