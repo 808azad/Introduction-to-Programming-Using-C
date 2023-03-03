@@ -32,7 +32,6 @@ void printReport(const char subjectCode[], const int row[], const int studentNum
 
         totalMarks += marks[i];
 
-        // you can get the total marks here
         if (marks[i] < lowestMark) {
             lowestMark = marks[i];
         }
