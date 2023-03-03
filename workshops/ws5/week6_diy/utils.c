@@ -5,6 +5,8 @@ void line(char fill, int length);
 void flushKey();
 int getInt(void);
 int getIntMM(int min, int max);
+int yes(void);
+
 
 void line(char fill, int length) {
     int i;
