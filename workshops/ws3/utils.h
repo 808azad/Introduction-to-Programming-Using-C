@@ -1,3 +1,4 @@
 
-double getInt(void);
+int getInt(void);
 void flushKey();
+int yes(void)
