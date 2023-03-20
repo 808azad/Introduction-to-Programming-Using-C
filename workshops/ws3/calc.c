@@ -9,7 +9,7 @@ void line(char fill, int length) {
     }
 }
 
-double my_exp(double base, int exponent) {
+double myExp(double base, int exponent) {
     double result = 1.0;
     int i;
     for (i = 0; i < exponent; i++) {
@@ -71,7 +71,7 @@ int calc() {
                 printf("\n");
                 break;
             case '^':
-                result = my_exp(num1, num2);
+                result = myExp(num1, num2);
                 value = printf("%.3lf\n", result);
                 line('-', value);
                 printf("\n");
