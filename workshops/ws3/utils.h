@@ -1,3 +1,3 @@
-void line(char fill, int length);
-double getValue(void);
+
+double getInt(void);
 void flushKey();
