@@ -82,7 +82,7 @@ int calc() {
         }
         else {
             printf("Invalid Command!\n"
-                "[Question mark][First Number][Operation][Second Number] <ENTER>\n");
+                "[Question mark][First Number][Operation][Second Number]<ENTER>\n");
         }
        flushKey();
     }
