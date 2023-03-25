@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{00cd2531-7b9c-4860-aa96-d65557b676fb}</ProjectGuid>
-    <RootNamespace>week10full</RootNamespace>
+    <ProjectGuid>{7b12dece-49c2-49aa-b594-e0b2f431b80f}</ProjectGuid>
+    <RootNamespace>week10fulll</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -132,6 +132,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="movie.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="movies.dat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
