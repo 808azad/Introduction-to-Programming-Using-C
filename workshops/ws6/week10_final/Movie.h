@@ -7,7 +7,7 @@ struct Movie
 	char title[61];
 	int year;
 	char rating[4];
-	char duration[5];
+	int duration;
 	char genre[61];
 	float consRating;
 };
