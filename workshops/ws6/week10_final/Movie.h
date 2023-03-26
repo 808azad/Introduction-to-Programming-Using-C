@@ -11,6 +11,13 @@ struct Movie
 	char genre[61];
 	float consRating;
 };
+
+struct Time
+{
+	int hours;
+	int minutes;
+};
+
 int loadMovie(struct Movie* mptr, FILE* fptr);
 void list(const struct Movie* mptr, int row);
 void display(const struct Movie* m);
