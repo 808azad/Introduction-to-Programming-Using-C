@@ -4,7 +4,7 @@
 int loadMovie(struct Movie* mptr, FILE* fptr)
 {
 	int done = 0;
-	if (fscanf(fptr, "%[^\t]\t%d\t%[^\t]\t%d\t%[^\t]\t%f\n",
+	if (fscanf(fptr, "%60[^\t]\t%d\t%3[^\t]\t%d\t%60[^\t]\t%f\n",
 		&mptr->title, &mptr->year, &mptr->rating, &mptr->duration, &mptr->genre, &mptr->consRating) == 6)
 	{
 		done = 1;
@@ -24,7 +24,7 @@ void display(const struct Movie* m)
 	printf("Rating: %s\n", m->rating);
 	printf("Duration: %d\n", m->duration);
 	printf("Genres: %s\n", m->genre);
-	printf("Consumer Rating: %.1f", m->consRating);
+	printf("Consumer Rating: %.1f\n", m->consRating);
 }
 const char* getMovieTitle(const struct Movie* mptr)
 {
