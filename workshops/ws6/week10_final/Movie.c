@@ -4,7 +4,7 @@
 int loadMovie(struct Movie* mptr, FILE* fptr)
 {
 	int done = 0;
-	if (fscanf(fptr, "%60[^\t]\t%d\t%3[^\t]\t%d\t%60[^\t]\t%f\n",
+	if (fscanf(fptr, "%60[^ \t]\t%d\t%3[^ \t]\t%d\t%60[^ \t]\t%f\n",
 		&mptr->title, &mptr->year, &mptr->rating, &mptr->duration, &mptr->genre, &mptr->consRating) == 6)
 	{
 		done = 1;
