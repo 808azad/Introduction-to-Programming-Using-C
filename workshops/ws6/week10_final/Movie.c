@@ -18,7 +18,7 @@ void list(const struct Movie* mptr, int row)
 	t.hours = mptr->duration / 60;
 	t.minutes = mptr->duration % 60;
 
-	printf("| %3d | %-20.20s|%5d |%5s |%2d:%02d | %-25.25s|%5.1f |\n", row, mptr->title,
+	printf("| %3d | %-20.20s |%5d |%5s |%2d:%02d | %-25.25s|%5.1f |\n", row, mptr->title,
 		mptr->year, mptr->rating, t.hours, t.minutes, mptr->genre, mptr->consRating);
 }
 void display(const struct Movie* m)
