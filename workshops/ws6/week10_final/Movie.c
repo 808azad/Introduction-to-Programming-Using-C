@@ -4,8 +4,8 @@
 int loadMovie(struct Movie* mptr, FILE* fptr)
 {
 	int done = 0;
-	if (fscanf(fptr, "%[^\t]\t%d\t%[^\t]\t%d\t%[^\t]\t%f\n",
-		mptr->title, mptr->year, mptr->rating, mptr->duration, mptr->genre, mptr->consRating) == 6)
+	if (fscanf(fptr, "%[^\t]\t%d\t%[^\t]\t%[^\t]\t%[^\t]\t%f\n",
+		&mptr->title, &mptr->year, &mptr->rating, &mptr->duration, &mptr->genre, &mptr->consRating) == 6)
 	{
 		done = 1;
 	}
@@ -14,7 +14,7 @@ int loadMovie(struct Movie* mptr, FILE* fptr)
 
 void list(const struct Movie* mptr, int row)
 {
-	printf("|%2d | %-20.20s|%5d |%5s |%5s | %-25.25s|%5.1f |", row, mptr->title,
+	printf(" %3d | %-20.20s|%5d |%5s |%5s | %-25.25s|%5.1f |\n", row, mptr->title,
 		mptr->year, mptr->rating, mptr->duration, mptr->genre, mptr->consRating);
 }
 void display(const struct Movie* m)
@@ -24,7 +24,7 @@ void display(const struct Movie* m)
 	printf("Rating: %s\n", m->rating);
 	printf("Duration: %s\n", m->duration);
 	printf("Genres: %s\n", m->genre);
-	printf("Consumer Rating: %f", m->consRating);
+	printf("Consumer Rating: %.1f", m->consRating);
 }
 const char* getMovieTitle(const struct Movie* mptr)
 {
