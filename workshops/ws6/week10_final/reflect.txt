@@ -1,0 +1,32 @@
+In order to complete the workshop 6 new essential topics were covered. First of all, we learned new kind of types called "structures". Basicaly, "structures" are a derived type. We declare it globally, store primitive types inside(like a package of variables) and can access it from all of our functions. Declaration of "structures" takes a form: 
+
+struct Movies
+{
+   //all needed variables(members of a struct)
+
+};(required semicolon at the end)
+
+The keyword "struct" here is an identifier for derived types or structures, and "Movies' is the name by which the structure is called(like int, double..). While defining an object of a structure, we allocate a memory for it. Definition: 
+
+struct Movies movie1
+{
+    //all needed variables   
+};
+
+Here, "Movies" is a name of a structure, and "movie1" is a name of the object. While accessing them from our functions, we use dot(.) operator between object name and member: 
+ 
+movie1.title;
+
+
+The second covered topic was "pointers". "Pointers" are types of varibles that store the memory adress of specific variables as its value and can manipulate with it. A declaration of "pointer" variable is pretty much the same as the regular one, but we have to use asterisk(*) after a type identifier:
+
+int* ptr1;
+double* ptr2;
+
+In order to store the memory adress of a variable, "pointer" variable must be the same type as targeted variable. For instance, we cannot assing double variable to the pointer integer. However, for accesing and manipulating the value at the memory adress of the targetted variable, we can use asterisk(*) and the name of the pointer variable:
+
+int x = 25;
+int* ptr1 = &x;
+printf("The value of x is: %d", *ptr1);
+
+There were no serious issues i encountered while working on this workshop; only two small ones. The first issue was related to the lack of "movies.dat" file, which takes me some time to understand. The second probled was in loadMovie function. By mistake, in fscanf function i put (&) before 3 strings members of "Movie" structure and hopefully was able to solve it after little bit of consideration.
