@@ -30,28 +30,34 @@ void runPos(const char filename[])
 	   selValue = menu();
 	   switch (selValue)
 	   {
-	    case 1:
+	        case 1:
 			inventory();
-		   break;
+			printf("The Sene-Store\n");
+		        break;
 		case 2:
 			addItem();
+			printf("The Sene-Store\n");  
 			break;
 		case 3:
 			removeItem();
+			printf("The Sene-Store\n");
 			break;
 		case 4:
 			stockItem();
+			printf("The Sene-Store\n");   
 			break;
 		case 5:
 			POS();
+			printf("The Sene-Store\n");   
 			break;
-	    default:
+	        default:
 			saveItem(filename);
 			printf("Goodbye!");
 			done = 1;
-		   break;
+		        break;
 	   }
 		
 	}
 
 }
+	
