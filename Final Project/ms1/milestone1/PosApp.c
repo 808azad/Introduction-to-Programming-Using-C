@@ -12,7 +12,7 @@ void addItem()
 
 void removeItem()
 {
-	printf(">>>> Removing Item...\n");
+	printf(">>>> Remove Item...\n");
 }
 
 void stockItem()
