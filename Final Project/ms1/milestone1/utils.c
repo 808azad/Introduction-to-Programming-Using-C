@@ -52,7 +52,7 @@ int getMMInt(int min, int max, const char valueName[]) {
     do {
         value = getInt();
         if (value < min || value > max) {
-            printf("[%d<=%s<=%d], try again: ", min, valueName, max);
+            printf("[%d<=%s<=%d], retry: ", min, valueName, max);
         }
     } while (value < min || value > max);
     return value;
