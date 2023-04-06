@@ -1,5 +1,5 @@
-#ifndef SDDS_MILESTONE1_H
-#define SDDS_MILESTONE1_H
+#ifndef SDDS_UTILS_H
+#define SDDS_UTILS_H
 
 void line(char fill, int length);
 void flushKey();
@@ -9,4 +9,4 @@ double getDouble(void);
 double getDoubleMM(double min, double max);
 
 
-#endif // !SDDS_MILESTONE1_H
+#endif // !SDDS_UTILS1_H
