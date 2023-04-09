@@ -1,3 +1,4 @@
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "utils.h"
@@ -54,7 +55,7 @@ void runPos(const char filename[])
 			saveItem(filename);
 			printf("Goodbye!");
 			done = 1;
-		        break;
+		    break;
 	   }
 		
 	}

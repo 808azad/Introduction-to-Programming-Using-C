@@ -1,4 +1,13 @@
-
+/*
+Student Name: Azad Zeynalov
+Email: azeynalov1@myseneca.ca
+Id: 112217229
+Date: 2023-04-08
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my project milestones.
+-----------------------------------------------------------
+*/
 #include "POS.h"
 #include "PosUI.h"
 #include <stdio.h>
