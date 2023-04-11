@@ -40,18 +40,20 @@ int getInt(void) {
 
 void flushKey() 
 {
-    char ch = 'x';
-    while (ch != '\n') 
-    {
-        ch = getchar();
-    }
+    //char ch = 'x';
+    //while (ch != '\n') 
+    //{
+    //    ch = getchar();
+    //}
+   while(getchar() == '\n');
 }
 
 void fflushKey(FILE* fptr) {
-   char ch = 'x';
-   while(ch != '\n') {
-      ch = fgetc(fptr);
-   }
+   //char ch = 'x';
+   //while(ch != '\n') {
+   //   ch = fgetc(fptr);
+   //}
+   while(fgetc(fptr) == '\n');
 }
 
 int getMMInt(int min, int max, const char valueName[]) {
