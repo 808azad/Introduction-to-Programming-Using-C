@@ -34,17 +34,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="POS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="PosApp.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PosUI.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="utils.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="POS.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

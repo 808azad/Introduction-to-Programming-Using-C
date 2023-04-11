@@ -47,6 +47,13 @@ void flushKey()
     }
 }
 
+void fflushKey(FILE* fptr) {
+   char ch = 'x';
+   while(ch != '\n') {
+      ch = fgetc(fptr);
+   }
+}
+
 int getMMInt(int min, int max, const char valueName[]) {
     int value;
     do {
