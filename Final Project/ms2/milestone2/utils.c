@@ -45,18 +45,7 @@ void flushKey()
     //{
     //    ch = getchar();
     //}
-<<<<<<< HEAD
     while (getchar() == '\n');
-}
-
-void fflushKey(FILE* fptr) {
-    //char ch = 'x';
-    //while(ch != '\n') {
-    //   ch = fgetc(fptr);
-    //}
-    while (fgetc(fptr) == '\n');
-=======
-   while(getchar() == '\n');
 }
 
 void fflushKey(FILE* fptr) {
@@ -65,7 +54,7 @@ void fflushKey(FILE* fptr) {
    //   ch = fgetc(fptr);
    //}
    while(fgetc(fptr) == '\n');
->>>>>>> 6866ccc25f8fb7f5ef3bdf6592e55298b2edf0ff
+
 }
 
 int getMMInt(int min, int max, const char valueName[]) {
