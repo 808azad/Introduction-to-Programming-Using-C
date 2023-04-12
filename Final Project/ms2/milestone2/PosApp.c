@@ -39,7 +39,7 @@ double tav(void)
 
 void inventory(void) 
 {
-    printf(">>>> Inventory...\n");
+    printf(">>>> List Items...\n");
     listItems();
     tav();
     printf("\n");
