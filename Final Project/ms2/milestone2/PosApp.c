@@ -88,16 +88,16 @@ double cost(const struct Item* item)
 
 void listItems(void) {
 
+    int i;
     char iName[19];
-    char iSku[5];
 
     printf(" %-4s| %-6s | %-18s | %-6s|%-2s | %-3s |   %-6s|\n", "Row", "SKU", "Item Name", "Price", "TX", "Qty", "Total");
     printf("-----|--------|--------------------|-------|---|-----|---------|\n");
-    for (int i = 0; i < noOfItems; i++) 
+    for (i = 0; i < noOfItems; i++) 
     {
         strncpy(iName, items[i].name, 18);
-        strncpy(iSku, items[i].sku, 5);
-        printf("%4d | %6.6s | %-18.18s | %5.2lf | %1c | %3d |  %6.2lf |\n", i + 1, iSku, iName, items[i].price,
+        
+        printf("%4d | %6.6s | %-18.18s | %5.2lf | %1c | %3d |  %6.2lf |\n", i + 1, items[i].sku, iName, items[i].price,
             (items[i].taxed == 1) ? 'T' : ' ', items[i].quantity, cost(&items[i]) * (double)items[i].quantity);
 
     }
