@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+//
 void line(char fill, int length);
 void flushKey();
 int getInt(void);
