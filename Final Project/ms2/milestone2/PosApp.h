@@ -10,9 +10,10 @@ struct Item
 	int taxed;
 	int quantity;
 };
-struct Item items[MAX_NO_ITEMS];
 
+struct Item items[MAX_NO_ITEMS];
 int noOfItems;
+
 void listItems(void);
 void inventory();
 void addItem();

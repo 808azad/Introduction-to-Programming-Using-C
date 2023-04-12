@@ -2,90 +2,94 @@
 #include <stdio.h>
 #include <string.h>
 #include "PosApp.h"
+#include "utils.h"
+
+int loadItems(const char filename[]);
+double cost(const struct Item* item);
+void listItems(void);
 
 
 
-
-void inventory(void)
+double tav(void)
 {
-	printf(">>>> Inventory...\n");
-	listItems();
-	printf("\n");
+    int i;
+    double tav = 0;
+
+    for (i = 0; i < noOfItems; i++)
+    {
+        tav = tav + (cost(&items[i]) * (double)items[i].quantity);
+    }
+    printf("                               Total Asset: $  |       %.2lf |\n", tav);
+    printf("-----------------------------------------------^---------------^");
+
+    return tav;
 }
 
-void addItem()
-{
-	printf(">>>> Adding Item...\n");
+
+void inventory(void) {
+    printf(">>>> Inventory...\n");
+    listItems();
+    tav();
+    printf("\n");
 }
 
-void removeItem()
-{
-	printf(">>>> Remove Item...\n");
+void addItem() {
+    printf(">>>> Adding Item...\n");
 }
 
-void stockItem()
-{
-	printf(">>>> Stock Items...\n");
+void removeItem() {
+    printf(">>>> Remove Item...\n");
 }
 
-void POS()
-{
-	printf(">>>> Point Of Sale...\n");
+void stockItem() {
+    printf(">>>> Stock Items...\n");
 }
 
-int loadItems(const char filename[])
-{
-	printf(">>>> Loading Items...\n");
-
-	FILE* fptr;
-	fptr = fopen(filename, "r");
-	if (fptr != NULL)
-	{
-	  noOfItems = 0;
-	  while (fscanf(fptr, "%[^,],%[^,],%.3lf,%d,%d", items[noOfItems].sku, items[noOfItems].name,
-		  &items[noOfItems].price, &items[noOfItems].taxed, &items[noOfItems].quantity) == 5);
-	  {  
-		noOfItems++;
-	  }
-	}
-	fclose(fptr);
-	printf(">>>> Done!...\n");
-	return noOfItems;
+void POS() {
+    printf(">>>> Point Of Sale...\n");
 }
 
-void saveItem(const char filename[]) 
-{
-	printf(">>>> Saving Items...\n");
+int loadItems(const char filename[]) {
+    printf(">>>> Loading Items...\n");
+
+    FILE* fptr;
+    fptr = fopen(filename, "r");
+    if (fptr != NULL) {
+        noOfItems = 0;
+        while (fscanf(fptr, "%[^,],%[^,],%lf,%d,%d", items[noOfItems].sku, items[noOfItems].name,
+            &items[noOfItems].price, &items[noOfItems].taxed, &items[noOfItems].quantity) == 5) {
+            //fflushKey(fptr);
+            while (fgetc(fptr) != '\n');
+            noOfItems++;
+        }
+    }
+    fclose(fptr);
+    printf(">>>> Done!...\n");
+    return noOfItems;
 }
 
-double cost(const struct Item* item)
-{
-	double the_cost = 0.0;
-	if (item->taxed == 1)
-	{
-		the_cost = item->price * (1 + item->taxed * TAX);
-	}
-	else
-	{
-		the_cost = item->price;
-
-	}
-	return the_cost;
+void saveItem(const char filename[]) {
+    printf(">>>> Saving Items...\n");
 }
 
-void listItems(void)
-{
-	
-	char iName[19];
+double cost(const struct Item* item) {
+    return  item->price * (1 + item->taxed * TAX);
+}
 
-	printf(" %-4s| %-6s | %-18s | %-6s|%-2s | %-3s |   %-6s|\n", "Row", "SKU", "Item Name", "Price", "TX", "Qty", "Total");
-	printf("-----|--------|--------------------|-------|---|-----|---------|\n");
-	for (int i = 0; i < noOfItems; i++)
-	{
-		strcpy(iName, items[i].name, 18);
-		printf("%4d | %6s | %-18.18s |  %4.2lf | %1c | %3d |  %6.2lf |", i + 1, items[i].sku, iName, items[i].price,
-			(items[i].taxed == 1) ? 'T' : ' ', items[i].quantity, cost(&items[i]) * (double)items[i].quantity);
-	
-	}
+void listItems(void) {
+
+    char iName[19];
+    char iSku[5];
+
+    printf(" %-4s| %-6s | %-18s | %-6s|%-2s | %-3s |   %-6s|\n", "Row", "SKU", "Item Name", "Price", "TX", "Qty", "Total");
+    printf("-----|--------|--------------------|-------|---|-----|---------|\n");
+    for (int i = 0; i < noOfItems; i++) {
+        strncpy(iName, items[i].name, 18);
+        strncpy(iSku, items[i].sku, 5);
+        printf("%4d | %6.6s | %-18.18s | %5.2lf | %1c | %3d |  %6.2lf |\n", i + 1, iSku, iName, items[i].price,
+            (items[i].taxed == 1) ? 'T' : ' ', items[i].quantity, cost(&items[i]) * (double)items[i].quantity);
+
+    }
+    printf("-----^--------^--------------------^-------^---^-----^---------^\n");
 
 }

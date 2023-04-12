@@ -7,10 +7,10 @@ int getInt(void);
 int getMMInt(int min, int max, const char valueName[]);
 double getDoubleMM(double min, double max);
 
-void line(char fill, int length) 
+void line(char fill, int length)
 {
     int i;
-    for (i = 0; i < length; i++) 
+    for (i = 0; i < length; i++)
     {
         printf("%c", fill);
     }
@@ -22,10 +22,10 @@ int getInt(void) {
     int value;
     int matches = scanf("%d", &value);
     char c = getchar();
-    while (matches != 1 || c != '\n') 
+    while (matches != 1 || c != '\n')
     {
         flushKey();
-        if (matches != 1) 
+        if (matches != 1)
         {
             printf("Invalid Integer, try again: ");
         }
@@ -38,13 +38,22 @@ int getInt(void) {
     return value;
 }
 
-void flushKey() 
+void flushKey()
 {
-    char ch = 'x';
-    while (ch != '\n') 
-    {
-        ch = getchar();
-    }
+    //char ch = 'x';
+    //while (ch != '\n') 
+    //{
+    //    ch = getchar();
+    //}
+    while (getchar() == '\n');
+}
+
+void fflushKey(FILE* fptr) {
+    //char ch = 'x';
+    //while(ch != '\n') {
+    //   ch = fgetc(fptr);
+    //}
+    while (fgetc(fptr) == '\n');
 }
 
 int getMMInt(int min, int max, const char valueName[]) {
@@ -63,10 +72,10 @@ double getDouble(void) {
     double dvalue;
     double dmatches = scanf("%lf", &dvalue);
     char c = getchar();
-    while (dmatches != 1 || c != '\n') 
+    while (dmatches != 1 || c != '\n')
     {
         flushKey();
-        if (dmatches != 1) 
+        if (dmatches != 1)
         {
             printf("Invalid Double, try again: ");
         }
@@ -79,12 +88,12 @@ double getDouble(void) {
     return dvalue;
 
 }
-double getDoubleMM(double min, double max) 
+double getDoubleMM(double min, double max)
 {
     double dvalue;
     do {
         dvalue = getDouble();
-        if (dvalue < min || dvalue > max) 
+        if (dvalue < min || dvalue > max)
         {
             printf("[%.3lf<=Number<=%.3lf], try again: ", min, max);
         }
