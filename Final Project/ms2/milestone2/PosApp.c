@@ -1,9 +1,19 @@
+/*
+
+Student name: Azad Zeynalov
+Email: azeynalov1@matrix.senecacollege.ca
+ID: 112217229
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my project milestones.
+-----------------------------------------------------------
+*/
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 #include "PosApp.h"
 #include "utils.h"
-
+//
 
 int loadItems(const char filename[]);
 double cost(const struct Item* item);

@@ -9,5 +9,6 @@ int getMMInt(int min, int max, const char valueName[]);
 double getDouble(void);
 double getDoubleMM(double min, double max);
 
+//
 
 #endif // !SDDS_UTILS1_H

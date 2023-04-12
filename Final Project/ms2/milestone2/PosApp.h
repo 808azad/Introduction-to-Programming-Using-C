@@ -1,7 +1,7 @@
 #ifndef SDDS_POSAPP_H
 #define SDDS_POSAPP_H
 #include "POS.h"
-
+//
 struct Item
 {
 	char sku[MAX_SKU_LEN];
