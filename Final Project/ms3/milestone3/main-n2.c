@@ -1,5 +1,5 @@
 // Final Project 
-// Student POS App M33 tester program
+// Student POS App M32 tester program
 // Version 1.0
 // Date	2023-04-01
 // Author	Fardad Soleimanloo
@@ -8,7 +8,6 @@
 // for submission.
 //
 /////////////////////////////////////////////////////////////////
-#include <stdio.h>
 #include "PosApp.h"
 int main() {
     struct Item I[6] = {
@@ -21,9 +20,9 @@ int main() {
     };
     int i;
     double total = 0;
+    printf("  Name                Price  taxed\n");
     for (i = 0; i < 6; i++) {
-        display(&I[i]);
-        total += cost(&I[i]);
+        total += billDisplay(&I[i]);
     }
     printf("total: %.2lf", total);
     return 0;
