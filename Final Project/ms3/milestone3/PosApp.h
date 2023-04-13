@@ -22,4 +22,6 @@ void stockItem();
 void POS();
 int loadItems(const char filename[]);
 void saveItems(const char filename[]);
+double cost(const struct Item* item);
+double billDisplay(const struct Item* item);
 #endif // !SDDS_POSAPP_H

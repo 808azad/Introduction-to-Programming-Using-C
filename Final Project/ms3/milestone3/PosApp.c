@@ -15,11 +15,6 @@ that my professor provided to complete my project milestones.
 #include "utils.h"
 //
 
-int loadItems(const char filename[]);
-double cost(const struct Item* item);
-void listItems(void);
-void saveItem(const char filename[]);
-
 
 
 double tav(void)
@@ -89,6 +84,8 @@ int loadItems(const char filename[])
 
 void saveItems(const char filename[]) 
 {
+    printf(">>>> Saving Items...");
+
     int i;
     FILE* fptr;
     fptr = fopen(filename, "w");
@@ -128,6 +125,14 @@ void listItems(void) {
 
     }
     printf("-----^--------^--------------------^-------^---^-----^---------^\n");
+}
+
+double billDisplay(const struct Item* item)
+{
+    char temp[15];
+    strncpy(temp, item->name, 14);
+    printf("| %14.14s| %9.2lf | %s |\n", temp, cost(item), (item->taxed == 1) ? "Yes" : "   ");
+    return cost(item);
 }
 
 
