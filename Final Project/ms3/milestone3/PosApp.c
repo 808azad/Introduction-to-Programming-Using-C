@@ -152,6 +152,47 @@ void display(const struct Item* items)
     printf("=============^\n");
 }
 
+/*int search(void)
+{
+    char sku[20];
+    printf("SKU: ");
+    scanf("%19s", sku);
 
+    if (sku == '\0') {
+        return -2;
+    }
+
+    for (int i = 0; i < noOfItems; i++) {
+        if (strcmp(sku, items[i].sku) == 0) {
+            return i;
+        }
+    }
+
+    return -1;
+}*/
+
+int search(void)
+{
+    int i;
+    int result = -1;
+    char sku[20];
+    printf("Sku: ");
+    scanf("%s", sku);
+    if (sku[0] == '\n')
+    {
+        return -2;
+    }
+    else
+    {
+        for (i = 0; i < noOfItems; i++)
+        {
+            if (strcmp(sku, items[i].sku) == 0)
+            {
+                result = i;
+            }
+        }
+    }
+    return result;
+}
 
 

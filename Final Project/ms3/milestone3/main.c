@@ -1,5 +1,5 @@
 // Final Project 
-// Student POS App M33 tester program
+// Student POS App M34 tester program
 // Version 1.0
 // Date	2023-04-01
 // Author	Fardad Soleimanloo
@@ -11,20 +11,17 @@
 #include <stdio.h>
 #include "PosApp.h"
 int main() {
-    struct Item I[6] = {
-       {"3695","Honeydew Melon",5.99,0,20},
-       {"1679","Jack's Apple Juice",1.50,0,80},
-       {"6539","Joe's Organic Potato Chips",3.29,1,15},
-       {"9462","Kiwifruit",0.50,0,123 },
-       {"4297","Lays Chips S&V",3.69,1,1},
-       {"1234","Milk",3.99,0,1}
-    };
     int i;
-    double total = 0;
-    for (i = 0; i < 6; i++) {
-        display(&I[i]);
-        total += cost(&I[i]);
+    int foundIndex;
+    loadItems("posdata.csv");
+    for (i = 0; (foundIndex = search()) != -2; i++) {
+        if (foundIndex >= 0) {
+            printf("SKU found at index %d\n", foundIndex);
+        }
+        else {
+            printf("SKU not found!\n");
+        }
     }
-    printf("total: %.2lf", total);
+    printf("Search was executed %d times...", i);
     return 0;
 }
