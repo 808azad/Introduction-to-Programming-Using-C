@@ -1,5 +1,5 @@
 <h1 align="center">Hi there, I'm Azad Zeynalov</h1>
-<h3 align="center">I am a passionate software developer based in Toronto, Canada. As far as know myself, I have always been interested in software and programming. Therefore, it is a great pleasure for me to jump on something new in my field, despite the difficulty. Currently, I am on my way of mastering C++, HTML, CSS and JavaScript.</h3>
+<h3 align="center">I am a passionate software developer based in Toronto, Canada. As far as know myself, I have always been interested in software and programming. It is a great pleasure for me to jump on something new in my field, despite the difficulty. Currently, I am on my way of mastering C++, HTML, CSS and JavaScript.</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=808azad&label=Profile%20views&color=0e75b6&style=flat" alt="808azad" /> </p>
 
