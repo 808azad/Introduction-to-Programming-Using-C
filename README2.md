@@ -3,6 +3,8 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=808azad&label=Profile%20views&color=0e75b6&style=flat" alt="808azad" /> </p>
 
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=808azad" alt="808azad" /></a> </p>
+
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
 - 📫 How to reach me **azadzeynalov13@gmail.com**
@@ -17,3 +19,5 @@
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=808azad&show_icons=true&locale=en&layout=compact" alt="808azad" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=808azad&show_icons=true&locale=en" alt="808azad" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=808azad&" alt="808azad" /></p>
