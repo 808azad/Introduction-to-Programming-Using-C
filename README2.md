@@ -1,9 +1,5 @@
 <h1 align="center">Hi there, I'm Azad Zeynalov</h1>
-<h3 align="center">I am a passionate software developer based in Toronto, Canada. As far as know myself, I have always been interested in software and programming. It is a great pleasure for me to jump on something new in my field, despite the difficulty. Currently, I am on my way of mastering C++, HTML, CSS and JavaScript.</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=808azad&label=Profile%20views&color=0e75b6&style=flat" alt="808azad" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=808azad" alt="808azad" /></a> </p>
+<h3 align="center">I am a passionate software developer based in Toronto, Canada. As far as know myself, I have always been interested in software and programming. Therefore, it is a great pleasure for me to jump on something new in my field, despite the difficulty. Currently, I am on my way of mastering C++, HTML, CSS and JavaScript.</h3>
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
@@ -20,4 +16,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=808azad&show_icons=true&locale=en" alt="808azad" /></p>
 
-<p style="background-color: black;"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=808azad&" alt="808azad" /></p> 
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=808azad&" alt="808azad" /></p>
