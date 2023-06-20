@@ -1,23 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-/*
-Name: Azad Zeynalov
-Student Number: 112217229
-E-mail: azeynalov1@myseneca.ca
-Date of completion: 01.02.23
-
-
-
-*/
-
-
-
-
-
-
-
-
+// Function to draw a rectangle with specified characters and dimensions.
 void rectangle(char leftTop, char top, char topRight,
     char right, char rightButtom, char buttom,
     char buttomLeft, char left, char fill,
@@ -51,8 +35,8 @@ void rectangle(char leftTop, char top, char topRight,
      while (f < width - 2) {
          printf("%c", buttom);
          f++;
-     }printf("%c\n", rightButtom);
-    
-    
+     }
+     printf("%c\n", rightButtom);
+   
 }
 

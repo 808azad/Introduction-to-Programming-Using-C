@@ -3,17 +3,18 @@
 #include "rental.h"
 #include "utils.h"
 
-void line(char fill, int lenght){
+// Function to print a line with a specified character and length
+void line(char fill, int lenght) {
 	int i;
 	for (i = 0; i < lenght; i++) {
 		printf("%c", fill);
 	}
 }
 
+// Function to display the rental menu
 void menu(void) {
- 	char ch = ' ';
-	printf("Equipment%5cPrice%6cSKU", ch, ch);
-	printf("\n");
+	char ch = ' ';
+	printf("Equipment%5cPrice%6cSKU\n", ch, ch);
 	line('-', 28);
 	printf("\n");
 	printf("Skis%10c12.30%6c101\n", ch, ch);
@@ -26,8 +27,8 @@ void menu(void) {
 	printf("\n");
 }
 
+// Function to calculate the rental price based on the SKU
 double rent(int sku) {
-
 	double price = 0;
 
 	switch (sku) {
@@ -53,17 +54,15 @@ double rent(int sku) {
 		break;
 	case 306:
 		printf("Winter Jacket .... 20.55$\n");
-		price = 20.5;
+		price = 20.55;
 		break;
 	default:
 		printf("Invalid Selection!");
-		
-	
 	}
 	return price;
-
 }
 
+// Function to handle the rental process
 void rental(void) {
 	int skuNum = 0;
 	double price = 0;
@@ -71,27 +70,20 @@ void rental(void) {
 
 	do {
 		printf("Enter sku number or 0 to exit: ");
-			skuNum = getInt();
-		
+		skuNum = getInt();
+
 		if (skuNum != 0) {
-			
 			price += rent(skuNum);
-			
 		}
 	} while (skuNum != 0);
 
-	
 	line('-', 28);
 	printf("\n");
 
 	char ch = ' ';
 	printf("Total price:%7c %.2lf\n", ch, price);
 	printf("Tax:%15c %.2lf\n", ch, price * 0.13);
-	printf("Total + Tax:%7c %.2lf\n", ch,  price * 1.13);
+	printf("Total + Tax:%7c %.2lf\n", ch, price * 1.13);
 	line('*', 28);
-	printf("\n");	
+	printf("\n");
 }
-
-
-
-

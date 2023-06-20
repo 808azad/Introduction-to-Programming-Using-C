@@ -1,3 +1,2 @@
-void line(char fill, int length);
-double getValue(void);
+//prototype of util function for header
 void flushKey();

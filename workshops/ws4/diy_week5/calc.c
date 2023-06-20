@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include "utils.h"
 
+// Function to draw a line of a specified character for a given length
 void line(char fill, int length) {
     int i;
     for (i = 0; i < length - 1; i++) {
@@ -9,6 +9,7 @@ void line(char fill, int length) {
     }
 }
 
+// Function to calculate exponentiation of a base raised to an exponent
 double myExp(double base, int exponent) {
     double result = 1.0;
     int i;
@@ -18,6 +19,7 @@ double myExp(double base, int exponent) {
     return result;
 }
 
+// Main function for the calculator program
 int calc() {
     double num1;
     double num2;
@@ -27,17 +29,22 @@ int calc() {
     char specialSign;
     int done = 1;
 
-    while(done) {
+    // Loop until the user enters a newline character
+    while (done) {
         printf("> ");
         scanf("%c", &specialSign);
 
+        // If the special sign is a newline character, exit the loop
         if (specialSign == '\n') {
             return 0;
         }
 
+        // Read the input values and operator character
         int matches = scanf("%lf%c%lf", &num1, &operators, &num2);
 
+        // Check if the special sign is a question mark and if the input is valid
         if (specialSign == '?' && matches == 3) {
+            // Perform different calculations based on the operator character
             switch (operators) {
             case '+':
                 value = printf("%.3lf\n", result = num1 + num2);
@@ -84,7 +91,10 @@ int calc() {
             printf("Invalid Command!\n"
                 "[Question mark][First Number][Operation][Second Number]<ENTER>\n");
         }
-       flushKey();
+
+        // Clear any remaining input in the buffer
+        flushKey();
     }
+
     return 0;
 }

@@ -3,6 +3,8 @@
 int getNoOfStudents(void);
 int getAverage(int NumberOfStudents);
 void printReport(int NumberOfStudents, int average);
+
+//the program takes the grades(in percentage) of provided number of students and display their average at the end
 int main(void) {
 	int num;
 	int average;

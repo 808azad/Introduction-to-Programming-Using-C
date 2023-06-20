@@ -8,15 +8,23 @@ int getIntMM(int min, int max);
 double getDouble(void);
 double getDoubleMM(double min, double max);
 
+// Function to print a line of a specified length with a specified character
 void line(char fill, int length) {
-    int i;
-    for (i = 0; i < length; i++) {
+    for (int i = 0; i < length; i++) {
         printf("%c", fill);
     }
     putchar('\n');
 }
 
+// Function to clear any extra input characters from the input buffer
+void flushKey() {
+    char ch = 'x';
+    while (ch != '\n') {
+        ch = getchar();
+    }
+}
 
+// Function to read an integer from the user, handling invalid input
 int getInt(void) {
     int value;
     int matches = scanf("%d", &value);
@@ -28,7 +36,6 @@ int getInt(void) {
         }
         else {
             printf("Enter only an integer, try again: ");
-            //    flushKey();
         }
         matches = scanf("%d", &value);
         c = getchar();
@@ -36,13 +43,7 @@ int getInt(void) {
     return value;
 }
 
-void flushKey() {
-    char ch = 'x';
-    while (ch != '\n') {
-        ch = getchar();
-    }
-}
-
+// Function to read an integer within a specified range from the user
 int getIntMM(int min, int max) {
     int value;
     do {
@@ -54,7 +55,7 @@ int getIntMM(int min, int max) {
     return value;
 }
 
-
+// Function to read a double from the user, handling invalid input
 double getDouble(void) {
     double dvalue;
     double dmatches = scanf("%lf", &dvalue);
@@ -71,8 +72,9 @@ double getDouble(void) {
         c = getchar();
     }
     return dvalue;
-
 }
+
+// Function to read a double within a specified range from the user
 double getDoubleMM(double min, double max) {
     double dvalue;
     do {
@@ -83,4 +85,3 @@ double getDoubleMM(double min, double max) {
     } while (dvalue < min || dvalue > max);
     return dvalue;
 }
-

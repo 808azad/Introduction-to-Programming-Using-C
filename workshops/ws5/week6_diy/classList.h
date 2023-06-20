@@ -1,4 +1,4 @@
-
+//prototypes of classList functions for header file (with summary on some of them given by professor)
 void printReport(const char subjectCode[], const int row[], const int studentNumbers[],
                  const int marks[], int noOfStudents);
 

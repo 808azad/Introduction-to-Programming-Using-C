@@ -5,7 +5,7 @@
 // Version 1.0
 // Date Winter 2022
 // Author  Fardad Soleimanloo
-// Description
+// Description: Main tester module written by professor
 //
 //  Add the code required as commented below
 //
