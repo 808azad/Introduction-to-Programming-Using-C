@@ -10,7 +10,7 @@ Part #1: **The Money Spending Calculator**)
 
 Workshop #3: (
 Part #1: **Statistics of Students' Results**)
-(Part #2: **Utils Module**
+(Part #2: **Utils Module (Implementation of Utils functions for later workshops)**
 )
 
 Workshop #4: (
