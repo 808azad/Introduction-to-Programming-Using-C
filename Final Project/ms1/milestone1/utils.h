@@ -1,6 +1,6 @@
 #ifndef SDDS_UTILS_H
 #define SDDS_UTILS_H
-
+//header for the functions of utils module
 void line(char fill, int length);
 void flushKey();
 int getInt(void);

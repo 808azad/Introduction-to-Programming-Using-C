@@ -1,17 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-//
-void line(char fill, int length);
-void flushKey();
-int getInt(void);
-int getMMInt(int min, int max, const char valueName[]);
-double getDoubleMM(double min, double max);
-
-void line(char fill, int length)
-{
+//functions from the utils module implemented in workshop 3
+void line(char fill, int length){
     int i;
-    for (i = 0; i < length; i++)
-    {
+    for (i = 0; i < length; i++){
         printf("%c", fill);
     }
     putchar('\n');
@@ -38,8 +30,7 @@ int getInt(void) {
     return value;
 }
 
-void flushKey()
-{
+void flushKey(){
     //char ch = 'x';
     //while (ch != '\n') 
     //{
@@ -68,16 +59,13 @@ int getMMInt(int min, int max, const char valueName[]) {
     return value;
 }
 
-
 double getDouble(void) {
     double dvalue;
     double dmatches = scanf("%lf", &dvalue);
     char c = getchar();
-    while (dmatches != 1 || c != '\n')
-    {
+    while (dmatches != 1 || c != '\n'){
         flushKey();
-        if (dmatches != 1)
-        {
+        if (dmatches != 1){
             printf("Invalid Double, try again: ");
         }
         else {
@@ -87,15 +75,13 @@ double getDouble(void) {
         c = getchar();
     }
     return dvalue;
-
 }
-double getDoubleMM(double min, double max)
-{
+
+double getDoubleMM(double min, double max){
     double dvalue;
     do {
         dvalue = getDouble();
-        if (dvalue < min || dvalue > max)
-        {
+        if (dvalue < min || dvalue > max){
             printf("[%.3lf<=Number<=%.3lf], try again: ", min, max);
         }
     } while (dvalue < min || dvalue > max);

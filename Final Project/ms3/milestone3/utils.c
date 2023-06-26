@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-//
+//functions from the utils module implemented in workshop 3
 void line(char fill, int length);
 void flushKey();
 int getInt(void);

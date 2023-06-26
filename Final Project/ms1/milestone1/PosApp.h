@@ -1,5 +1,6 @@
 #ifndef SDDS_POSAPP_H
 #define SDDS_POSAPP_H
+//prototypes of posApp's mockup functions
 void inventory();
 void addItem();
 void removeItem();

@@ -9,6 +9,7 @@
 //
 /////////////////////////////////////////////////////////////////
 #include "PosApp.h"
+//main tester of professor for the milestone 3 part 2
 int main() {
     struct Item I[6] = {
        {"3695","Honeydew Melon",5.99,0,20},

@@ -10,6 +10,7 @@
 //
 /////////////////////////////////////////////////////////////////
 #include "PosUI.h"
+//main tester of the milestone 2
 int main() {
 	runPos("posdata.csv");
 	return 0;

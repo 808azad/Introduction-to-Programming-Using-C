@@ -11,6 +11,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "PosApp.h"
+//main tester of professor for the milestone 3 part 1
 void fileDump(const char* filename);
 int main() {
     fileDump("posdata.csv");
